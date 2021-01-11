@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>随手笔记 - 分类 - 嘲笑&amp;梦想</title>
+        <link>https://page.goooer.com/categories/%E9%9A%8F%E6%89%8B%E7%AC%94%E8%AE%B0/</link>
+        <description>随手笔记 - 分类 - 嘲笑&amp;梦想</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 11 Jan 2021 23:20:21 &#43;0800</lastBuildDate><atom:link href="https://page.goooer.com/categories/%E9%9A%8F%E6%89%8B%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>Windows下hugo小试</title>
+    <link>https://page.goooer.com/hugotest/</link>
+    <pubDate>Mon, 11 Jan 2021 23:20:21 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://page.goooer.com/hugotest/</guid>
+    <description><![CDATA[因为用Go，所以预料可以省很多事，要比Hexo省心，不懂Ruby,Jekyll也就无爱了。 下载 [Github]https://github.com/gohugoio/hugo/releases 直接hugo_0.xx.0_Windows-]]></description>
+</item></channel>
+</rss>
