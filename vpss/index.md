@@ -9,11 +9,17 @@
 * visa充卢布，支付宝只能充欧元不划算
 
 ## [Dedipath](https://dedipath.com/ssd-vps)
-* Los Angeles 洛杉矶 512MB|10 GB SSD|1 Gbps|Unmetered	~~$20~~ $10/YR(半价优惠码:LRA2SXDI20 )
+* Los Angeles 洛杉矶 1x|512MB|10 GB SSD|1 Gbps|Unmetered	~~$20~~ $10/YR(半价优惠码:LRA2SXDI20 )
 * 美西|便宜|无限量
+
+## [EUserv](https://www.euserv.com/en/virtual-private-server/root-vserver/v2/vs2-free.php)
+* Thüringen DE 德国 图林根 1x|1GB|10GB SSD|1G|1000GB
+* 免费|纯IPV6|~~一个月~~[Github Actions](https://github.com/CokeMine/EUserv_extend)
+
 ##### 修改ssh端口
 ```shell
 vi /etc/ssh/sshd_config
+i
 Port 2222 #Port 22=>Port xxx
 esc
 :wq
