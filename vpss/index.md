@@ -16,6 +16,10 @@
 * Thüringen DE 德国 图林根 1x|1GB|10GB SSD|1G|1000GB
 * 免费|纯IPV6|~~一个月~~[Github Actions](https://github.com/CokeMine/EUserv_extend)
 
+## [Scaleway](https://www.scaleway.com/fr/tarifs/)
+* Amsterdam  阿姆斯特丹 1x|1G|10GB NVMe|100M|Unmetered 便宜，量大，欧洲中心
+* ~~0.0025 €/hour~~IPV6 0.0005 €/hour × 24 × 31 = 0.372 €/m (?+税?)
+
 ##### 修改ssh端口
 ```shell
 vi /etc/ssh/sshd_config
