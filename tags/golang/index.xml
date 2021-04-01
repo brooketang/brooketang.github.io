@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>golang - 标签 - 嘲笑&amp;梦想</title>
+        <link>https://page.goooer.com/tags/golang/</link>
+        <description>golang - 标签 - 嘲笑&amp;梦想</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 02 Apr 2021 01:10:47 &#43;0800</lastBuildDate><atom:link href="https://page.goooer.com/tags/golang/" rel="self" type="application/rss+xml" /><item>
+    <title>openssl生成根证书</title>
+    <link>https://page.goooer.com/ca/</link>
+    <pubDate>Fri, 02 Apr 2021 01:10:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://page.goooer.com/ca/</guid>
+    <description><![CDATA[自签发证书 根证书是CA认证中心给自己颁发的证书,是信任链的起始点.这里我们自己做CA使用openssl命令来生成根证书. 生成私钥 1 openssl genrsa -out key.pem 2048]]></description>
+</item></channel>
+</rss>

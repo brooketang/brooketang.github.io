@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Xray套用CloudFlare优选ip - 嘲笑&amp;梦想</title><meta name="Description" content="随手笔记"><meta property="og:title" content="Xray套用CloudFlare优选ip" />
+<meta property="og:description" content="套壳机场越来越差，Xray套用CloudFlare优选ip可堪一战 Debian X64 开启BBR加速 1 2 3 4 echo &#34;net.core.default_qdisc=fq&#34; &gt;&gt; /etc/sysctl.conf echo &#34;net.ipv4.tcp_congestion_control=bbr&#34; &gt;&gt; /etc/sysctl.conf sysctl -p lsmod | grep bbr OpenVZ平台Go" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://page.goooer.com/xraybycdn/" />
+<meta property="og:image" content="https://page.goooer.com/logo.png"/>
+<meta property="article:published_time" content="2021-01-12T02:06:19+08:00" />
+<meta property="article:modified_time" content="2021-01-12T02:06:19+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://page.goooer.com/logo.png"/>
+
+<meta name="twitter:title" content="Xray套用CloudFlare优选ip"/>
+<meta name="twitter:description" content="套壳机场越来越差，Xray套用CloudFlare优选ip可堪一战 Debian X64 开启BBR加速 1 2 3 4 echo &#34;net.core.default_qdisc=fq&#34; &gt;&gt; /etc/sysctl.conf echo &#34;net.ipv4.tcp_congestion_control=bbr&#34; &gt;&gt; /etc/sysctl.conf sysctl -p lsmod | grep bbr OpenVZ平台Go"/>
+<meta name="application-name" content="嘲笑&amp;梦想">
+<meta name="apple-mobile-web-app-title" content="嘲笑&amp;梦想"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://page.goooer.com/xraybycdn/" /><link rel="prev" href="https://page.goooer.com/hugotest/" /><link rel="next" href="https://page.goooer.com/vpss/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Xray套用CloudFlare优选ip",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/page.goooer.com\/xraybycdn\/"
+        },"image": ["https:\/\/page.goooer.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "xray, cloudflare, 优选ip","wordcount":  633 ,
+        "url": "https:\/\/page.goooer.com\/xraybycdn\/","datePublished": "2021-01-12T02:06:19+08:00","dateModified": "2021-01-12T02:06:19+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "love\u0026peace","logo": "https:\/\/page.goooer.com\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "love\u0026peace"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="嘲笑&amp;梦想"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>嘲笑&amp;梦想</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="嘲笑&amp;梦想"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>嘲笑&amp;梦想</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Xray套用CloudFlare优选ip</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>love&peace</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E9%9A%8F%E6%89%8B%E7%AC%94%E8%AE%B0/"><i class="far fa-folder fa-fw"></i>随手笔记</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-12">2021-01-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 633 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#debian-x64">Debian X64</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#开启bbr加速">开启BBR加速</a></li>
+            <li><a href="#搭建xray">搭建Xray</a></li>
+            <li><a href="#设置参数">设置参数</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>套壳机场越来越差，Xray套用CloudFlare优选ip可堪一战</p>
+<h2 id="debian-x64">Debian X64</h2>
+<h4 id="开启bbr加速">开启BBR加速</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">echo</span> <span class="s2">&#34;net.core.default_qdisc=fq&#34;</span> &gt;&gt; /etc/sysctl.conf
+<span class="nb">echo</span> <span class="s2">&#34;net.ipv4.tcp_congestion_control=bbr&#34;</span> &gt;&gt; /etc/sysctl.conf
+sysctl -p
+lsmod <span class="p">|</span> grep bbr
+</code></pre></td></tr></table>
+</div>
+</div><p><em>OpenVZ平台Google BBR加速TCP之Rinetd方式</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">#适用于单网卡（单IP）服务器：</span>
+wget https://github.com/tcp-nanqinlang/lkl-rinetd/releases/download/1.1.0/tcp_nanqinlang-rinetd-debianorubuntu.sh
+bash tcp_nanqinlang-rinetd-debianorubuntu.sh
+<span class="c1">#如果提示only support OpenVZ !，则使用下面这个脚本</span>
+wget https://github.com/tcp-nanqinlang/lkl-rinetd/releases/download/1.1.0-nocheckvirt/tcp_nanqinlang-rinetd-debianorubuntu-nocheckvirt.sh
+bash tcp_nanqinlang-rinetd-debianorubuntu-nocheckvirt.sh
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">#适用于多网卡（多IP）服务器，会为所有网卡（所有IP）提供加速：</span>
+wget https://github.com/tcp-nanqinlang/lkl-rinetd/releases/download/1.1.0/tcp_nanqinlang-rinetd-debianorubuntu-multiNIC.sh
+bash tcp_nanqinlang-rinetd-debianorubuntu-multiNIC.sh
+<span class="c1">#如果提示only support OpenVZ !，则使用下面这个脚本</span>
+wget https://github.com/tcp-nanqinlang/lkl-rinetd/releases/download/1.1.0-nocheckvirt/tcp_nanqinlang-rinetd-debianorubuntu-nocheckvirt-multiNIC.sh
+bash tcp_nanqinlang-rinetd-debianorubuntu-nocheckvirt-multiNIC.sh
+</code></pre></td></tr></table>
+</div>
+</div><p>接着按照提示完成操作。</p>
+<h4 id="搭建xray">搭建Xray</h4>
+<ul>
+<li>更新系统</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">apt update -y <span class="c1">#更新</span>
+apt install -y wget <span class="c1">#安装工具组件</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>执行Xray安装脚本</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">wget -P /root -N --no-check-certificate <span class="s2">&#34;https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh&#34;</span> <span class="o">&amp;&amp;</span> chmod <span class="m">700</span> /root/install.sh <span class="o">&amp;&amp;</span> /root/install.sh
+</code></pre></td></tr></table>
+</div>
+</div><p>该脚本运行一次以后，命令行输入 <code>vasma</code> 可重复调出该脚本使用。</p>
+<ul>
+<li>选择Xray</li>
+<li>CloudFlare 解析ip时，先关闭CDN，部署完毕，域名能打开伪装页后再激活小云朵，在SSL/TLS中要选完全（端到端加密，使用服务器上的自签名证书）</li>
+<li>部分vps在重装系统后nginx会提示80端口被占用，输入下面命令强行释放80端口</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nv">CMD</span><span class="o">=</span><span class="sb">`</span>lsof -i:<span class="s2">&#34;80&#34;</span> <span class="p">|</span> awk <span class="s1">&#39;{print $1}&#39;</span> <span class="p">|</span> grep -v <span class="s2">&#34;COMMAND&#34;</span> <span class="p">|</span> sort -u<span class="sb">`</span> <span class="o">&amp;&amp;</span> systemctl disable <span class="si">${</span><span class="nv">CMD</span><span class="si">}</span> <span class="o">&amp;&amp;</span> systemctl stop <span class="si">${</span><span class="nv">CMD</span><span class="si">}</span> <span class="o">&amp;&amp;</span> killall -9 <span class="si">${</span><span class="nv">CMD</span><span class="si">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>其余按照提示完成操作。</li>
+<li>找到<code>===================VLESS WS TLS CDN===========================</code>项，<code>Port</code>,<code>id</code>,<code>tls</code>,<code>host</code>,<code>path</code>为有效参数。</li>
+</ul>
+<h4 id="设置参数">设置参数</h4>
+<p>下载<a href="https://github.com/badafans/better-cloudflare-ip" target="_blank" rel="noopener noreffer">better-cloudflare-ip</a> 相应版本，运行相应脚本，获取<code>优质ip</code>。</p>
+<ul>
+<li>地址        &lt;==     <code>优质ip</code></li>
+<li>端口        &lt;==     <code>Port</code></li>
+<li>id          &lt;==     <code>id</code></li>
+<li>流控        &lt;==</li>
+<li>加密        &lt;==      none</li>
+<li>协议        &lt;==      ws/websocket</li>
+<li>伪装        &lt;==       none</li>
+<li>伪装域名    &lt;==         <code>host</code></li>
+<li>path       &lt;==          <code>path</code></li>
+<li>tls        &lt;==      tls</li>
+<li>证书验证    &lt;==        false</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-01-12</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/xraybycdn/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://page.goooer.com/xraybycdn/" data-hashtag="xray"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Tumblr" data-sharer="tumblr" data-url="https://page.goooer.com/xraybycdn/" data-title="Xray套用CloudFlare优选ip" data-tags="xray,cloudflare,优选ip"><i class="fab fa-tumblr fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Skype" data-sharer="skype" data-url="https://page.goooer.com/xraybycdn/" data-title="Xray套用CloudFlare优选ip"><i class="fab fa-skype fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/xray/">xray</a>,&nbsp;<a href="/tags/cloudflare/">cloudflare</a>,&nbsp;<a href="/tags/%E4%BC%98%E9%80%89ip/">优选ip</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/hugotest/" class="prev" rel="prev" title="Windows下hugo小试"><i class="fas fa-angle-left fa-fw"></i>Windows下hugo小试</a>
+            <a href="/vpss/" class="next" rel="next" title="垃圾VPS可堪一战">垃圾VPS可堪一战<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">love&amp;peace</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
